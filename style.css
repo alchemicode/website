@@ -218,22 +218,29 @@ body {
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
-    text-align: center;
+    text-align: right;
 }
 
 .array-block{
     background-color: #E4E4E4;
     color: #000;
-    padding:1em;
-    margin: 0.5em 1em;
+    padding:1.5em 1em;
+    padding-left: 10em;
+    margin-left: -5em;
+    margin-right: 2em;
     font-size: 24px;
-    border-radius: 15px;
     width: 12em;
     text-decoration: none;
 }
+.array-top{
+    border-radius: 0px 15px 0px 0px;
+}
+.array-bottom{
+    border-radius: 0px 0px 15px 0px;
+}
 
 .array-block.selected{
-    background-color: #6153CC!important;
+    background-color: #282828!important;
     color: #fff!important;
     text-decoration:none!important;
 }
