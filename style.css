@@ -223,6 +223,10 @@ body {
     padding: 1em 0em;
 }
 
+.widget {
+    margin: 0em 1.5em;
+}
+
 .flex-array {
     display: flex;
     flex-direction: column;
