@@ -32,7 +32,7 @@
             <input type="text" id="email" name="email" required>
             <br>
             <label for="problem" class="bottom-left-shadow">What can we do for you</label><br>
-            <textarea id="problem" name="problem" rows="5" cols="50" wrap=soft required></textarea>
+            <textarea id="problem" name="message" rows="5" cols="50" wrap=soft required></textarea>
             <br>
             <input type="submit" value="Submit">
         </form>
@@ -49,14 +49,16 @@
 
             const value = Object.fromEntries(data.entries());
 
+            const value_json = JSON.stringify(value);
+
             console.log({
                 value
             });
 
             var request = new XMLHttpRequest();
-            request.open("POST", "http://mail.codealchemi.com:6969/");
-            request.send(value);
-            alert("Did it work?");
+            request.open("POST", "https://codealchemi.com:9090/");
+            request.setRequestHeader('Content-Type', 'application/json');
+            request.send(value_json);
         }
 
         const form = document.querySelector('form');
