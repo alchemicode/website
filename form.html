@@ -59,7 +59,7 @@
             var request = new XMLHttpRequest();
             
             request.onreadystatechange = function() {
-                if (request.readyState == XMLHttpRequest.DONE) 
+                if (request.readyState == XMLHttpRequest.DONE) {
                     document.getElementById("theform").innerHTML = "";
                     if (request.responseText === "Handled.") {
                         document.getElementById("tbox").innerHTML = "Thanks for leaving us a message. We'll be in touch soon. :)";    
