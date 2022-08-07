@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head profile>
-    <title>Code Alchemi</title>
+    <title>codealchemi</title>
     <link rel="icon" type="image/png" href="images/alchemi.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -57,23 +57,23 @@
             });
 
             var request = new XMLHttpRequest();
-            
+
             request.onreadystatechange = function() {
                 if (request.readyState == XMLHttpRequest.DONE) {
                     document.getElementById("theform").innerHTML = "";
                     if (request.responseText === "Handled.") {
-                        document.getElementById("tbox").innerHTML = "Thanks for leaving us a message. We'll be in touch soon. :)";    
+                        document.getElementById("tbox").innerHTML = "Thanks for leaving us a message. We'll be in touch soon. :)";
                     } else {
                         document.getElementById("tbox").innerHTML = "This is embarrasing, but something went wrong.";
                     }
                 }
             }
-            
+
             request.open("POST", "https://mail.codealchemi.com/form/");
             request.setRequestHeader('Content-Type', 'application/json');
             request.send(value_json);
-            
-            
+
+
         }
 
         const form = document.querySelector('form');
