@@ -79,103 +79,107 @@
                     document.getElementById(tag).style.display = "flex";
                 }
             </script>
-            <div class="flex-array fade-in">
-                <a class="array-block array-top" id="webdev_block" onclick="showText('webdev')" href="javascript:void(0);">
-                    Web Development
-                </a>
-                <a class="array-block" id="softdev_block" onclick="showText('softdev')" href="javascript:void(0);">
-                    Software Development
-                </a>
-                <a class="array-block" id="system_block" onclick="showText('system')" href="javascript:void(0);">
-                    System Administration
-                </a>
-                <a class="array-block" id="hosting_block" onclick="showText('hosting')" href="javascript:void(0);">
-                    Hosting
-                </a>
-                <a class="array-block array-bottom" id="marketing_block" onclick="showText('marketing')" href="javascript:void(0);">
-                    Media Services
-                </a>
-            </div>
-        </div>
-        <div>
-            <div id="webdev_text" class="array-click-text fade-in-to-left" style="display:none;">
-                <p>
-                    A stylish and informative website is essential for a modern business.
-                    <br><br>
-                    Your digital presence can singlehandedly define the success and longevity of your enterprise, and we know how to do it best. 
-                    <br><br>
-                    Our signature design brings simplicity and modularity to any site, and makes use of a variety of technologies.
-                </p>
-                <div class="image-column">
-                    <img src="images/logos/b&w/js_m.png">
-                    <img src="images/logos/b&w/php.png">
-                    <img src="images/logos/b&w/wordpress.png">
-                    <img src="images/logos/b&w/python.png">
-                    <img src="images/logos/b&w/discord.png">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="left-box">
+                    <div class="flex-array fade-in">
+                        <a class="array-block array-top" id="webdev_block" onclick="showText('webdev')" href="javascript:void(0);">
+                            Web Development
+                        </a>
+                        <a class="array-block" id="softdev_block" onclick="showText('softdev')" href="javascript:void(0);">
+                            Software Development
+                        </a>
+                        <a class="array-block" id="system_block" onclick="showText('system')" href="javascript:void(0);">
+                            System Administration
+                        </a>
+                        <a class="array-block" id="marketing_block" onclick="showText('marketing')" href="javascript:void(0);">
+                            Media Services
+                        </a>
+                        <a class="array-block array-bottom" id="hosting_block" onclick="showText('hosting')" href="javascript:void(0);">
+                            Hosting
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div id="softdev_text" class="array-click-text fade-in-to-left" style="display:none;">
-                <p>
-                    Your software can make or break or business operations. Countless businesses are hindered by lackluster and ineffective systems. 
-                    <br><br>
-                    Specialized software, tailored specifically to your needs, can improve the speed and efficiency of your work. 
-                    <br><br>
-                    These kinds of applications can also be modified whenever you need to add or change a feature. You'll never be bogged down by bad software, because it'll be yours.
-                </p>
-                <div class="image-column">
-                    <img src="images/logos/b&w/cs.png">
-                    <img src="images/logos/b&w/cpp.png">
-                    <img src="images/logos/b&w/python.png">
-                    <img src="images/logos/b&w/go.png">
-                    <img src="images/logos/b&w/java.png">
-                </div>
-            </div>
-            <div id="system_text" class="array-click-text fade-in-to-left" style="display:none;">
-                <p>
-                    While our in-house software or web services can improve your business, they may not be the best fit for you. <u>That's okay</u>!
-                    <br><br>
-                    But where we can still help is in the administration and maintenance of other tools and products. 
-                    <br><br>
-                    Achieving the correct architecture or scaling for your business with any software, ours or otherwise, can be a daunting task, and we can make sure your tools are tailor-fit to your needs.
-                </p>
-                <div class="image-column">
-                    <img src="images/logos/b&w/docker.png">
-                    <img src="images/logos/b&w/proxmox.png">
-                    <img src="images/logos/b&w/lxc.png">
-                    <img src="images/logos/b&w/linux.png">
-                    <img src="images/logos/b&w/jserv_m.png">
-                </div>
-            </div>
-            <div id="hosting_text" class="array-click-text fade-in-to-left" style="display:none;">
-                <p>
-                    Make use of our powerful servers for your games. 
-                    <br><br>
-                    On our platform, powered by Pterodactyl, we will handle the setup and management of your game servers, so you can focus on fun. 
-                    <br><br>
-                    Minecraft, Rust, Mordhau, TF2, Valheim, and more!
-                </p>
-                <div class="image-column">
-                    <img src="images/logos/b&w/minecraft.png">
-                    <img src="images/logos/b&w/rust.png">
-                    <img src="images/logos/b&w/mordhau.png">
-                    <img src="images/logos/b&w/tf2.png">
-                    <img src="images/logos/b&w/among-us.png">
-                </div>
-            </div>
-            <div id="marketing_text" class="array-click-text fade-in-to-left" style="display:none;">
-                <p>
-                    Online branding and interaction is integral to effective marketing. 
-                    <br><br>
-                    The use of social media by businesses has been evolving for years to reach a wider audience, and can be used to great advantage. 
-                    <br><br>
-                    Neat graphics, photo and video, and other visual stimuli, are all things that appeal to a potential audience. Our custom content creation can get you the outreach you need.
-                </p>
-                <div class="image-column">
-                    <img src="images/logos/b&w/twitter.png">
-                    <img src="images/logos/b&w/tiktok.png">
-                    <img src="images/logos/b&w/youtube.png">
-                    <img src="images/logos/b&w/instagram.png">
-                    <img src="images/logos/b&w/linkedin.png">
+                <div class="right-box">
+                    <div id="webdev_text" class="array-click-text fade-in-to-left" style="display:none;">
+                        <p>
+                            A stylish and informative website is essential for a modern business.
+                            <br><br>
+                            Your digital presence can singlehandedly define the success and longevity of your enterprise, and we know how to do it best. 
+                            <br><br>
+                            Our signature design brings simplicity and modularity to any site, and makes use of a variety of technologies.
+                        </p>
+                        <div class="image-column">
+                            <img src="images/logos/b&w/js_m.png">
+                            <img src="images/logos/b&w/php.png">
+                            <img src="images/logos/b&w/wordpress.png">
+                            <img src="images/logos/b&w/python.png">
+                            <img src="images/logos/b&w/discord.png">
+                        </div>
+                    </div>
+                    <div id="softdev_text" class="array-click-text fade-in-to-left" style="display:none;">
+                        <p>
+                            Your software can make or break or business operations. Countless businesses are hindered by lackluster and ineffective systems. 
+                            <br><br>
+                            Specialized software, tailored specifically to your needs, can improve the speed and efficiency of your work. 
+                            <br><br>
+                            These kinds of applications can also be modified whenever you need to add or change a feature. You'll never be bogged down by bad software, because it'll be yours.
+                        </p>
+                        <div class="image-column">
+                            <img src="images/logos/b&w/cs.png">
+                            <img src="images/logos/b&w/cpp.png">
+                            <img src="images/logos/b&w/python.png">
+                            <img src="images/logos/b&w/go.png">
+                            <img src="images/logos/b&w/java.png">
+                        </div>
+                    </div>
+                    <div id="system_text" class="array-click-text fade-in-to-left" style="display:none;">
+                        <p>
+                            While our in-house software or web services can improve your business, they may not be the best fit for you. <u>That's okay</u>!
+                            <br><br>
+                            But where we can still help is in the administration and maintenance of other tools and products. 
+                            <br><br>
+                            Achieving the correct architecture or scaling for your business with any software, ours or otherwise, can be a daunting task, and we can make sure your tools are tailor-fit to your needs.
+                        </p>
+                        <div class="image-column">
+                            <img src="images/logos/b&w/docker.png">
+                            <img src="images/logos/b&w/proxmox.png">
+                            <img src="images/logos/b&w/lxc.png">
+                            <img src="images/logos/b&w/linux.png">
+                            <img src="images/logos/b&w/jserv_m.png">
+                        </div>
+                    </div>
+                    <div id="hosting_text" class="array-click-text fade-in-to-left" style="display:none;">
+                        <p>
+                            Make use of our powerful servers for your games. 
+                            <br><br>
+                            On our platform, powered by Pterodactyl, we will handle the setup and management of your game servers, so you can focus on fun. 
+                            <br><br>
+                            Minecraft, Rust, Mordhau, TF2, Valheim, and more!
+                        </p>
+                        <div class="image-column">
+                            <img src="images/logos/b&w/minecraft.png">
+                            <img src="images/logos/b&w/rust.png">
+                            <img src="images/logos/b&w/mordhau.png">
+                            <img src="images/logos/b&w/tf2.png">
+                            <img src="images/logos/b&w/among-us.png">
+                        </div>
+                    </div>
+                    <div id="marketing_text" class="array-click-text fade-in-to-left" style="display:none;">
+                        <p>
+                            Online branding and interaction is integral to effective marketing. 
+                            <br><br>
+                            The use of social media by businesses has been evolving for years to reach a wider audience, and can be used to great advantage. 
+                            <br><br>
+                            Neat graphics, photo and video, and other visual stimuli, are all things that appeal to a potential audience. Our custom content creation can get you the outreach you need.
+                        </p>
+                        <div class="image-column">
+                            <img src="images/logos/b&w/twitter.png">
+                            <img src="images/logos/b&w/tiktok.png">
+                            <img src="images/logos/b&w/youtube.png">
+                            <img src="images/logos/b&w/instagram.png">
+                            <img src="images/logos/b&w/linkedin.png">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
