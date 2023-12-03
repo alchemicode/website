@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Google tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-217334439-1">
-    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-217334439-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -78,8 +77,12 @@
                     }
                     document.getElementById(tag).style.display = "flex";
                 }
+                let array = $("#services")
+                array.children(".array-block").each(element => {
+                    element.on("click", showText(element.attr('id').split("_")[0]))
+                });
             </script>
-            <div class="flex-array fade-in">
+            <div id="services" class="flex-array fade-in">
                 <a class="array-block array-top" id="webdev_block" onclick="showText('webdev')" href="javascript:void(0);">
                     Web Development
                 </a>
@@ -89,11 +92,11 @@
                 <a class="array-block" id="system_block" onclick="showText('system')" href="javascript:void(0);">
                     System Administration
                 </a>
-                <a class="array-block" id="hosting_block" onclick="showText('hosting')" href="javascript:void(0);">
-                    Hosting
-                </a>
                 <a class="array-block array-bottom" id="marketing_block" onclick="showText('marketing')" href="javascript:void(0);">
                     Media Services
+                </a>
+                <a class="array-block" id="hosting_block" onclick="showText('hosting')" href="javascript:void(0);">
+                    Hosting
                 </a>
             </div>
         </div>
