@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="images/logos/alchemi.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <!-- Google tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-217334439-1"></script>
     <script>
@@ -59,53 +60,53 @@
             <img src="images/comp_graphic.png" width="512px" height="512px">
         </div>
     </div>
+    
     <div class="page-section">
         <div>
             <h2 class="content-header bottom-left-shadow">Services</h2>
             <br>
-            <div style="display: flex; justify-content: space-between;">
-                <script type="text/javascript">
-                    function arrayClick(block_id, arr_id) {
-                        $(`#${arr_id}`).children(".array-block").removeClass("selected");
-                        $(`#${block_id}`).addClass("selected");
-                        console.log($(`#${arr_id}_info`));
-                        $(`#${arr_id}_info`).children().css("display","none");
-                        let info = $(`#${block_id.split("_")[0]}_text`);
-                        info.css("display", "flex");
-                    }
+            <div class="elements-section">
+                <div class="elements-section">
+                    <h1 class="page-element-text bottom-left-shadow fade-in delay-animation rem-bottom">you <nobr class="lg-view" style="display:inline">+</nobr></h1>
+                    <h1 class="page-element-text bottom-left-shadow fade-in delay-animation sm-view">+</h1>
+                    <div class="left-box rem-bottom rem-top">
 
-                    $(document).ready(function(){
-                        let array = $("#services")
-                        array.children(".array-block").each(function() {
-                            $(this).click(function() {
-                                let id = $(this).attr("id")
-                                arrayClick(id, "services")
+                        <script type="text/javascript">
+                            $(document).ready(function(){
+                                let array = $("#services")
+                                array.children(".array-block").each(function() {
+                                    $(this).click(function() {
+                                        let id = $(this).attr("id")
+                                        arrayClick(id, "services")
+                                    });
+                                });
                             });
-                        });
-                    });
-                </script>
-                <div class="left-box">
-                    <div id="services" class="flex-array fade-in">
-                        <a class="array-block array-top" id="webdev_block">
-                            Web Development
-                        </a>
-                        <a class="array-block" id="softdev_block">
-                            Software Development
-                        </a>
-                        <a class="array-block" id="system_block">
-                            System Administration
-                        </a>
-                        <a class="array-block" id="marketing_block">
-                            Media Services
-                        </a>
-                        <a class="array-block array-bottom" id="hosting_block">
-                            Hosting
-                        </a>
+                        </script>
+
+                        <div id="services" class="flex-array fade-in delay-animation">
+                            <a class="array-block array-top" id="webdev_block">
+                                Web
+                            </a>
+                            <a class="array-block" id="softdev_block">
+                                Software
+                            </a>
+                            <a class="array-block" id="system_block">
+                                Systems
+                            </a>
+                            <a class="array-block" id="marketing_block">
+                                Media
+                            </a>
+                            <a class="array-block array-bottom" id="hosting_block">
+                                Hosting
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="right-box">
-                    <div id="services_info">
-                        <div id="webdev_text" class="array-click-text fade-in-to-left" style="display:none; max-width: 75%;">
+                <div class="right-box rem-top no-left">
+                    <div id="services_info" style="display:none; align-items:center;">
+                        <h1 class="page-element-text bottom-left-shadow fade-in delay-animation lg-view" style="margin-right:0.2em"> -> </h1>
+                        <h1 class="page-element-text bottom-left-shadow fade-in delay-animation sm-view" style="margin-bottom:0.2em"> &#8595; </h1>
+                        <div id="webdev_text" class="array-click-text fade-in-to-left index-info" style="display:none;">
                             <p>
                                 A stylish and informative website is essential for a modern business.
                                 <br><br>
@@ -121,7 +122,7 @@
                                 <img src="images/logos/b&w/discord.png">
                             </div>
                         </div>
-                        <div id="softdev_text" class="array-click-text fade-in-to-left" style="display:none; max-width: 75%;">
+                        <div id="softdev_text" class="array-click-text fade-in-to-left index-info" style="display:none;">
                             <p>
                                 Your software can make or break or business operations. Countless businesses are hindered by lackluster and ineffective systems. 
                                 <br><br>
@@ -137,7 +138,7 @@
                                 <img src="images/logos/b&w/java.png">
                             </div>
                         </div>
-                        <div id="system_text" class="array-click-text fade-in-to-left" style="display:none; max-width: 75%;">
+                        <div id="system_text" class="array-click-text fade-in-to-left index-info" style="display:none;">
                             <p>
                                 While our in-house software or web services can improve your business, they may not be the best fit for you. <u>That's okay</u>!
                                 <br><br>
@@ -153,7 +154,7 @@
                                 <img src="images/logos/b&w/jserv_m.png">
                             </div>
                         </div>
-                        <div id="hosting_text" class="array-click-text fade-in-to-left" style="display:none; max-width: 75%;">
+                        <div id="hosting_text" class="array-click-text fade-in-to-left index-info" style="display:none;">
                             <p>
                                 Make use of our powerful servers for your games. 
                                 <br><br>
@@ -169,7 +170,7 @@
                                 <img src="images/logos/b&w/among-us.png">
                             </div>
                         </div>
-                        <div id="marketing_text" class="array-click-text fade-in-to-left" style="display:none; max-width: 75%;">
+                        <div id="marketing_text" class="array-click-text fade-in-to-left index-info" style="display:none; ">
                             <p>
                                 Online branding and interaction is integral to effective marketing. 
                                 <br><br>
@@ -185,8 +186,9 @@
                                 <img src="images/logos/b&w/linkedin.png">
                             </div>
                         </div>
+                        <h1 class="page-element-text bottom-left-shadow fade-in delay-animation lg-view" style="margin:0.1em"> = :) </h1>
+                        <h1 class="page-element-text bottom-left-shadow fade-in delay-animation sm-view" style="margin:0.1em"> | |<br>:) </h1>
                     </div>
-                    
                 </div>
             </div>
         </div>
